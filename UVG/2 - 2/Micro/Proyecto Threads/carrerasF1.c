@@ -65,7 +65,7 @@ int main(){
             }else if((carros[i].tipoLlanta == 2) && (j == 14)){
                 Sleep(1000);
             }
-            Sleep(carros[i].tiempoVuelta*100);
+            Sleep(carros[i].tiempoVuelta*100000);
             printf("%s, Vuelta: %d\n",carros[i].nombreCarro,j);
         }
         double t2 = omp_get_wtime();
