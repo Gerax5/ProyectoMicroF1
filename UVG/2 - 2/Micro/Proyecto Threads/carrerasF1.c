@@ -38,7 +38,7 @@ int main() {
         cars[i].currentSpeed = cars[i].originalSpeed * (cars[i].tireType == 0 ? 1.5 : (cars[i].tireType == 1 ? 1 : 0.8));
         cars[i].lapTime = 4.7 / cars[i].currentSpeed;
         cars[i].lapCount = 0;
-        cars[i].totalTime = 0;
+        cars[i].totalTime = 0.0;
     }
 
     // Initialize user's car
@@ -49,7 +49,7 @@ int main() {
     cars[7].currentSpeed = cars[7].originalSpeed * (cars[7].tireType == 0 ? 1.5 : (cars[7].tireType == 1 ? 1 : 0.8));
     cars[7].lapTime = 4.7 / cars[7].currentSpeed;
     cars[7].lapCount = 0;
-    cars[7].totalTime = 0;
+    cars[7].totalTime = 0.0;
 
     // Simulate race
     omp_set_num_threads(8);
@@ -58,9 +58,7 @@ int main() {
         int lapsCompleted = 0;
 
         while (lapsCompleted < 21)
-        {
-            double startTime = omp_get_wtime();
-            
+        {            
             // Simulate pit stops
             if (lapsCompleted == cars[i].lapsBeforePitstop)
             {     
@@ -81,13 +79,11 @@ int main() {
             
             // Simulate lap time
             Sleep(cars[i].lapTime * 100000);
-            double endTime = omp_get_wtime();
-            float lapDuration = endTime - startTime;
-            cars[i].totalTime += lapDuration;
+            cars[i].totalTime += cars[i].lapTime;
             lapsCompleted++;
             #pragma omp critical
             {
-                printf("%s, Lap: %d, Lap Time: %f\n", cars[i].name, lapsCompleted, lapDuration);
+                printf("%s, Lap: %d, Lap Time: %f\n", cars[i].name, lapsCompleted, cars[i].lapTime);
             }
         }
     }
