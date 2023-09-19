@@ -1,99 +1,132 @@
 #include <stdio.h>
 #include <omp.h>
 #include <stdbool.h>
-//#include <unistd.h> 
-#include <windows.h> //para windows
+#include <windows.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
 
+// Function to generate random numbers
 int random_number(int min_num, int max_num);
 
-struct carro{
-    char nombreCarro[10];
-    float velocidadActual;
-    float velocidadOriginal;
-    int tipoLlanta; //0 soft, 1 m, 2h
-    int numeroVueltas;
-    float tiempoVuelta;
-    float tiempoAcumulativo;
+// Function to get tire type from user
+int get_tire_type_from_user();
+
+// Car structure
+struct Car {
+    char name[10];
+    float currentSpeed;
+    float originalSpeed;
+    int tireType; // 0: soft, 1: medium, 2: hard
+    int lapCount;
+    int lapsBeforePitstop;
+    float lapTime;
+    float totalTime;
 };
 
+int main() {
+    // Initialize random seed
+    srand(time(NULL));
 
-int main(){
-    bool flagInicio = true;
-    struct carro carros[8];
-    char carName[10];
-    for (size_t i = 0; i < sizeof(carros)/sizeof(carros[0]); i++)
-    {
-        char carName[10];
-        sprintf(carName, "Carro %d",(i+1));
-        float velocidadActual;
-        float velocidadOriginal  =  random_number(250,300)*1.0;
-        int tipoLlanta = random_number(0,2);
-        if(tipoLlanta == 0){
-            velocidadActual = velocidadOriginal*1.5;
-        }else if(tipoLlanta ==1){
-            velocidadActual = velocidadOriginal*1;
-        }else{
-            velocidadActual = velocidadOriginal*0.8;
-        }
-        struct carro carroN = {0};
-        strcpy(carroN.nombreCarro, carName);
-        carroN.velocidadActual = velocidadActual;
-        carroN.velocidadOriginal = velocidadOriginal;
-        carroN.tipoLlanta = tipoLlanta;
-        carroN.tiempoVuelta = 4.7/velocidadActual;
-        carros[i] = carroN;
+    // Initialize cars
+    struct Car cars[8];
+    for (int i = 0; i < 7; ++i) {
+        sprintf(cars[i].name, "Car %d", i + 1);
+        cars[i].originalSpeed = random_number(250, 300);
+        cars[i].tireType = random_number(0, 2);
+        cars[i].lapsBeforePitstop = cars[i].tireType == 0 ? 7 : (cars[i].tireType == 1 ? 11 : 14);
+        cars[i].currentSpeed = cars[i].originalSpeed * (cars[i].tireType == 0 ? 1.5 : (cars[i].tireType == 1 ? 1 : 0.8));
+        cars[i].lapTime = 4.7 / cars[i].currentSpeed;
+        cars[i].lapCount = 0;
+        cars[i].totalTime = 0;
     }
 
-    for (int i = 0; i < sizeof(carros)/sizeof(carros[0]); i++)
-    {
-        printf("%s\n",carros[i].nombreCarro);
-    }
+    // Initialize user's car
+    strcpy(cars[7].name, "Player");
+    cars[7].tireType = get_tire_type_from_user();
+    cars[7].lapsBeforePitstop = cars[7].tireType == 0 ? 7 : (cars[7].tireType == 1 ? 11 : 14);
+    cars[7].originalSpeed = random_number(250, 300);
+    cars[7].currentSpeed = cars[7].originalSpeed * (cars[7].tireType == 0 ? 1.5 : (cars[7].tireType == 1 ? 1 : 0.8));
+    cars[7].lapTime = 4.7 / cars[7].currentSpeed;
+    cars[7].lapCount = 0;
+    cars[7].totalTime = 0;
 
-    printf("Struct 1:\n\ti = %s, f = %f\n",
-        carros[0].nombreCarro, carros[0].velocidadActual);
-
+    // Simulate race
     omp_set_num_threads(8);
     #pragma omp parallel for
-    for (int i = 0; i < 8; i++) {  
-        double t1 = omp_get_wtime();
-        for (int j = 0; j <= 21; j++)
+    for (int i = 0; i < 8; ++i) {
+        int lapsCompleted = 0;
+
+        while (lapsCompleted < 21)
         {
-            if((carros[i].tipoLlanta == 0) && (j == 7)){
-                Sleep(1000);
-            }else if((carros[i].tipoLlanta == 1) && (j == 11)){
-                Sleep(1000);
-            }else if((carros[i].tipoLlanta == 2) && (j == 14)){
+            double startTime = omp_get_wtime();
+            
+            // Simulate pit stops
+            if (lapsCompleted == cars[i].lapsBeforePitstop)
+            {     
+                if (i == 7) {
+                    #pragma omp critical
+                    {
+                        cars[i].tireType = get_tire_type_from_user();
+                        cars[i].lapsBeforePitstop += cars[i].tireType == 0 ? 7 : (cars[i].tireType == 1 ? 11 : 14);
+                    }
+                } else {
+                    cars[i].tireType = random_number(0, 2);
+                    cars[i].lapsBeforePitstop += cars[i].tireType == 0 ? 7 : (cars[i].tireType == 1 ? 11 : 14);
+                }
+                cars[i].currentSpeed = cars[i].originalSpeed * (cars[i].tireType == 0 ? 1.5 : (cars[i].tireType == 1 ? 1 : 0.8));
+                cars[i].lapTime = 4.7 / cars[i].currentSpeed;
                 Sleep(1000);
             }
-            Sleep(carros[i].tiempoVuelta*100000);
-            printf("%s, Vuelta: %d\n",carros[i].nombreCarro,j);
+            
+            // Simulate lap time
+            Sleep(cars[i].lapTime * 100000);
+            double endTime = omp_get_wtime();
+            float lapDuration = endTime - startTime;
+            cars[i].totalTime += lapDuration;
+            lapsCompleted++;
+            #pragma omp critical
+            {
+                printf("%s, Lap: %d, Lap Time: %f\n", cars[i].name, lapsCompleted, lapDuration);
+            }
         }
-        double t2 = omp_get_wtime();
-        carros[i].tiempoAcumulativo = (t2-t1);
     }
 
-    for (int i = 0; i < 8; i++)
-    {
-        printf("%s, Tiempo Total: %f\n",carros[i].nombreCarro,carros[i].tiempoAcumulativo);
+    // Display results
+    printf("\nFinal Results:\n");
+    for (int i = 0; i < 8; ++i) {
+        printf("%s, Total Time: %f\n", cars[i].name, cars[i].totalTime);
     }
-    
+
+    return 0;
 }
 
+int random_number(int min_num, int max_num) {
+    int result = 0, low_num = 0, hi_num = 0;
 
-int random_number(int min_num, int max_num)
-    {
-        int result = 0, low_num = 0, hi_num = 0;
-
-        if (min_num < max_num)
-        {
-            low_num = min_num;
-            hi_num = max_num + 1; // include max_num in output
-        } else {
-            low_num = max_num + 1; // include max_num in output
-            hi_num = min_num;
-        }
-
-        srand(time(NULL));
-        result = (rand() % (hi_num - low_num)) + low_num;
-        return result;
+    if (min_num < max_num) {
+        low_num = min_num;
+        hi_num = max_num + 1;
+    } else {
+        low_num = max_num + 1;
+        hi_num = min_num;
     }
+
+    result = (rand() % (hi_num - low_num)) + low_num;
+    return result;
+}
+
+int get_tire_type_from_user() {
+    int userInput;
+    int scanResult;
+    do {
+        printf("PITSTOP\n");
+        printf("Choose tire type (0: soft, 1: medium, 2: hard): ");
+        scanResult = scanf("%d", &userInput);
+        while(getchar() != '\n');
+        if (scanResult == 0 || userInput < 0 || userInput > 2) {
+            printf("Invalid input. Please enter a number between 0 and 2.\n");
+        }
+    } while (scanResult == 0 || userInput < 0 || userInput > 2);
+    return userInput;
+}
