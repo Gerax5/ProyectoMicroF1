@@ -12,6 +12,9 @@ int random_number(int min_num, int max_num);
 // Function to get tire type from user
 int get_tire_type_from_user();
 
+// Function to compare cars based on total time (for qsort)
+int compareCars(const void *a, const void *b);
+
 // Car structure
 struct Car {
     char name[10];
@@ -89,7 +92,11 @@ int main() {
     }
 
     // Display results
-    printf("\nFinal Results:\n");
+    printf("\nFINAL RESULTS:\n");
+
+    // sort cars based on totalTime
+    qsort(cars, 8, sizeof(struct Car), compareCars);
+
     for (int i = 0; i < 8; ++i) {
         printf("%s, Total Time: %f\n", cars[i].name, cars[i].totalTime);
     }
@@ -97,6 +104,7 @@ int main() {
     return 0;
 }
 
+// Function to generate random number in a given range
 int random_number(int min_num, int max_num) {
     int result = 0, low_num = 0, hi_num = 0;
 
@@ -112,6 +120,7 @@ int random_number(int min_num, int max_num) {
     return result;
 }
 
+// Function to get the tire type for the user car
 int get_tire_type_from_user() {
     int userInput;
     int scanResult;
@@ -125,4 +134,15 @@ int get_tire_type_from_user() {
         }
     } while (scanResult == 0 || userInput < 0 || userInput > 2);
     return userInput;
+}
+
+
+// Function to compare cars based on total time
+int compareCars(const void *a, const void *b) {
+    struct Car *carA = (struct Car *)a;
+    struct Car *carB = (struct Car *)b;
+
+    if (carA->totalTime < carB->totalTime) return -1;
+    if (carA->totalTime > carB->totalTime) return 1;
+    return 0;
 }
