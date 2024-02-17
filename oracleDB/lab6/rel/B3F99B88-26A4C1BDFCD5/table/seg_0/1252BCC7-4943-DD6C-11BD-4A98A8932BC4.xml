@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1252BCC7-4943-DD6C-11BD-4A98A8932BC4" name="propiedad">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>4FC0E6F4-E404-A7B4-9A05-278F02B99BF4</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_propiedad" id="EC0B8752-51A6-23E6-F530-E7CA17079C28">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>531ED47E-4280-97AB-4B83-B52AE5A66842</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_propietario" id="1C888578-8DAA-B814-DE0F-0E312B3E1305">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>CB66686C-CA1B-26CF-8E12-87013F299515</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_placa" id="E0E5DCEC-AC6F-A0BE-9C91-414C130A3CA5">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>8D731E07-4F5E-3F44-D27A-377AC8E9BF96</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_propiedad" id="5BC3EA2C-9019-1C1B-83E4-25A8B5515DB6">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>178ED7C3-C0DD-1FE0-FF7A-D47E78888154</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_fin_propiedad" id="B4E61913-1845-C780-3BE7-28C3A6819FB5">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>9778060C-8E62-46AE-205E-3BF891BE624D</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_placa1" id="71B6F7EA-895B-1514-9DBD-BFD30E8E7DF1">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>107F80CB-9150-15CF-9681-6F0540C73645</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F7393A0-C225-D5D7-6428-9A45CF4F1737" referredColumn="FC061A26-C1F0-3AA0-A27C-7A69C4795E56"/>
+</associations>
+</Column>
+<Column name="nit_propietario" id="654DBBDE-B911-B386-58CD-F35D7A7C1D8C">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>698404EE-F139-360A-DE1C-916793034C8B</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="886DA690-7D9E-C02B-C5A1-FE7962ACEF26" referredColumn="369FAF13-C7B0-6E89-8FF4-71E6AC00679A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0F3DF6C7-00FA-56B5-4F8E-035316B999F8" name="propiedad_PK">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>F818D078-0391-25AE-2FF5-21BF6050DCE3</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC0B8752-51A6-23E6-F530-E7CA17079C28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A1F6D83-67A6-0411-F429-3BCCD1B152B1" name="fk_propietario_propiedad">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>2210C1FC-7E81-A2EB-0582-F1D20E282BA3</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="654DBBDE-B911-B386-58CD-F35D7A7C1D8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1C78706-6D35-7B8F-674A-D589E1038C4D" name="vpropiedad">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>BD3A0059-3E2E-E570-0052-1083CE0E9450</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71B6F7EA-895B-1514-9DBD-BFD30E8E7DF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

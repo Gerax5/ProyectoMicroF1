@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="47FFF5B8-D11E-4BD0-D75D-A1E095BE023B" name="Infraccion">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:56:37 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_infraccion" id="7807FCC0-85B0-9D35-DDDA-98568139AFB3">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:56:44 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_propietario" id="3D64865A-E481-3DB0-9C12-90A87E436BE6">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:57:37 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero_placa" id="2F0C0438-C751-9164-F7CE-09CA287B1410">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:58:43 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_emision" id="A86A5A92-2031-E8A8-E4EE-54D456C6C290">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:59:24 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_agente" id="850F7FD4-00DA-3018-0D4A-31EBC5773C57">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:59:40 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lugar_infraccion" id="D971176A-F756-FD96-70B2-D84DDD63F3AD">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:00:13 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="importe" id="DE280186-2779-1037-025A-9825A57FC169">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:03:21 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nit_propietario" id="18B3BBC8-F47C-594D-50EF-9760F684D5D6">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:04:06 UTC</createdTime>
+<generatorID>D08AD05A-BB2C-A216-A6C9-FB7F4B45F95F</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<referedAttribute>F1F1B822-D64D-7377-17CE-11C44D138E83</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero_placa1" id="94663266-322B-45D3-C856-7B2DC22204F8">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:04:33 UTC</createdTime>
+<generatorID>4C97E162-CDEB-0151-FCC0-A022E89F8EE1</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<referedAttribute>B72D5943-AA5A-826B-3782-BD1545B0AFAE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1A070CD8-7082-CE16-EDFD-DB61073620A0" name="Infraccion PK">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:57:36 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7807FCC0-85B0-9D35-DDDA-98568139AFB3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

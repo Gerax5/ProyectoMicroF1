@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5F7393A0-C225-D5D7-6428-9A45CF4F1737" containerWithKeyObject="1252BCC7-4943-DD6C-11BD-4A98A8932BC4" localFKIndex="C1C78706-6D35-7B8F-674A-D589E1038C4D" name="vpropiedad">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>BD3A0059-3E2E-E570-0052-1083CE0E9450</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<referredTableLongName>Vehiculo</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8C4AA0E1-D612-FAD8-491D-736DA849005F</referredTableID>
+<keyObject>F16FB493-7CBF-10CB-6FA7-212B1570D1C5</keyObject>
+<referredKeyID>F16FB493-7CBF-10CB-6FA7-212B1570D1C5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>numero_placa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

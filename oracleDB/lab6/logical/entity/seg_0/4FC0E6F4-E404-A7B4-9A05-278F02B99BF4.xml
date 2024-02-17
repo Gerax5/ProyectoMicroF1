@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4FC0E6F4-E404-A7B4-9A05-278F02B99BF4" name="propiedad">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:26:57 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_propiedad" id="531ED47E-4280-97AB-4B83-B52AE5A66842">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:27:26 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_propietario" id="CB66686C-CA1B-26CF-8E12-87013F299515">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:28:07 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero_placa" id="8D731E07-4F5E-3F44-D27A-377AC8E9BF96">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:28:23 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_propiedad" id="178ED7C3-C0DD-1FE0-FF7A-D47E78888154">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:29:16 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_fin_propiedad" id="9778060C-8E62-46AE-205E-3BF891BE624D">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:29:34 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero_placa1" id="107F80CB-9150-15CF-9681-6F0540C73645">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:40:23 UTC</createdTime>
+<generatorID>BD3A0059-3E2E-E570-0052-1083CE0E9450</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<referedAttribute>B72D5943-AA5A-826B-3782-BD1545B0AFAE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nit_propietario" id="698404EE-F139-360A-DE1C-916793034C8B">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:43:16 UTC</createdTime>
+<generatorID>2210C1FC-7E81-A2EB-0582-F1D20E282BA3</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<referedAttribute>F1F1B822-D64D-7377-17CE-11C44D138E83</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F818D078-0391-25AE-2FF5-21BF6050DCE3" name="propiedad PK">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:29:08 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>531ED47E-4280-97AB-4B83-B52AE5A66842</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3DCB4AF9-370C-EEEA-4E76-EBBD356240EF" containerWithKeyObject="813A4BBA-6E72-E36A-AE0D-ACA169EBA2E2" localFKIndex="F47F3E04-B67C-57A4-51F0-284199038B6A" name="fkpinfraccion">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>D08AD05A-BB2C-A216-A6C9-FB7F4B45F95F</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<referredTableLongName>Propietario</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>465AB8AB-3300-4873-CF6B-46C5B5D12F34</referredTableID>
+<keyObject>CA291DDA-4E6C-A5F1-BFDF-CE58C4262808</keyObject>
+<referredKeyID>CA291DDA-4E6C-A5F1-BFDF-CE58C4262808</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>nit_propietario</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

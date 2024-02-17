@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C6F28112-88C6-793A-CE95-F7623B3CA26F" name="Propietario">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:34:06 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<discriminatorColumnName>tipo</discriminatorColumnName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nit_propietario" id="F1F1B822-D64D-7377-17CE-11C44D138E83">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:34:13 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B528F3DB-D5E7-2F09-66C6-3A7ED49156C8" name="Propietario PK">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:34:32 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F1F1B822-D64D-7377-17CE-11C44D138E83</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

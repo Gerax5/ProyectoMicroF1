@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fkmarcas" directorySegmentName="seg_0" id="2A6D48CF-CE16-D24D-38F2-9BBEFF143A1D">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:43:57 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<sourcePk>520FBA93-3E83-D030-3FDB-9F5E00EA0256</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>19839F1D-DF1A-00E1-51D9-66A3167A8301</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E7BC924D-F8A3-708E-4621-FA0EFCE84C92</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

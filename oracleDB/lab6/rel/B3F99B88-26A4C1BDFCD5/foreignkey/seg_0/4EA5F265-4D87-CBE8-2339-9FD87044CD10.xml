@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4EA5F265-4D87-CBE8-2339-9FD87044CD10" containerWithKeyObject="8C4AA0E1-D612-FAD8-491D-736DA849005F" localFKIndex="D5B2A86A-9554-083D-4C23-140ACDDF0433" name="fk_modelo">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>F2C06CF0-AA02-4A85-72FF-F9E8778BE18A</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<referredTableLongName>modelo</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0395C111-54D3-853C-A882-8586E52A897D</referredTableID>
+<keyObject>993A0062-ED7A-C722-FB27-9739B4AE7CC7</keyObject>
+<referredKeyID>993A0062-ED7A-C722-FB27-9739B4AE7CC7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_modelo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

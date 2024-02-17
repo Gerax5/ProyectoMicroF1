@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="465AB8AB-3300-4873-CF6B-46C5B5D12F34" name="Propietario">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>C6F28112-88C6-793A-CE95-F7623B3CA26F</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nit_propietario" id="369FAF13-C7B0-6E89-8FF4-71E6AC00679A">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>F1F1B822-D64D-7377-17CE-11C44D138E83</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_propietario" id="33CD019A-2A2A-1D4D-6124-C7CDDEFF531D">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:10:15 UTC</createdTime>
+<generatorID>AB015FE1-D95E-1164-48C5-D9D48893DE39</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="4D2EEB68-14D3-6AED-1EC5-58AC23341B3A">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:10:15 UTC</createdTime>
+<generatorID>F418DAF5-D2C8-DD4F-8007-2E5F18D023B3</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_domicilio" id="5B54B499-C18B-01B3-1B76-78D9BC1B3A02">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:10:15 UTC</createdTime>
+<generatorID>F6DBDCAE-6982-CFC3-044E-73BBBF8E678B</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_nacimiento" id="8DD6D506-11F9-C0C4-6C50-B6B08F302B06">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:10:15 UTC</createdTime>
+<generatorID>7FFBE26B-B071-7A7B-B475-FFAD117B7382</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="genero" id="6BD8E199-A057-ECB6-E619-7B29B31DFC0C">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:10:15 UTC</createdTime>
+<generatorID>E5A44B88-15A8-F1B5-C018-FC4B1EE155FB</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre/razon" id="256F44E5-791E-9EE1-8E83-B6B7C7F6F49A">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:10:15 UTC</createdTime>
+<generatorID>91873E3D-7AB7-EAC7-B22E-4193F87EC42A</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_creacion" id="A3DCEE16-5409-D47C-B191-BF85E60F77DF">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:10:15 UTC</createdTime>
+<generatorID>6C3AD42E-6478-85D2-FE4A-D97CF3BBDC50</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_registro_mercantil" id="7B1246BF-3BD9-2739-0FA7-204650290F1C">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:10:15 UTC</createdTime>
+<generatorID>998F5F0D-6362-DA7F-D2F9-5EBC3D13677C</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA291DDA-4E6C-A5F1-BFDF-CE58C4262808" name="Propietario_PK">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:09:15 UTC</createdTime>
+<generatorID>B528F3DB-D5E7-2F09-66C6-3A7ED49156C8</generatorID>
+<ownerDesignName>lab6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="369FAF13-C7B0-6E89-8FF4-71E6AC00679A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

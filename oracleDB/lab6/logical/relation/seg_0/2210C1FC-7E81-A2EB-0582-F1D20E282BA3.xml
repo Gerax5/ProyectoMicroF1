@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_propietario_propiedad" directorySegmentName="seg_0" id="2210C1FC-7E81-A2EB-0582-F1D20E282BA3">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 02:43:16 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<sourcePk>B528F3DB-D5E7-2F09-66C6-3A7ED49156C8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C6F28112-88C6-793A-CE95-F7623B3CA26F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4FC0E6F4-E404-A7B4-9A05-278F02B99BF4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

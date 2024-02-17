@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fkpinfraccion" directorySegmentName="seg_0" id="D08AD05A-BB2C-A216-A6C9-FB7F4B45F95F">
+<createdBy>Gerax</createdBy>
+<createdTime>2024-02-17 03:04:06 UTC</createdTime>
+<ownerDesignName>lab6</ownerDesignName>
+<engineerTo>
+<item key="B3F99B88-BB3B-D339-5CB7-26A4C1BDFCD5" value="true"/>
+</engineerTo>
+<sourcePk>B528F3DB-D5E7-2F09-66C6-3A7ED49156C8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C6F28112-88C6-793A-CE95-F7623B3CA26F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>47FFF5B8-D11E-4BD0-D75D-A1E095BE023B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
